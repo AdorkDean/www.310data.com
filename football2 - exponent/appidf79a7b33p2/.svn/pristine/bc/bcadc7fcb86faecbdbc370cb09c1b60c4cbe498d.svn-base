@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>指数－赔率变化</title>
+	    <link rel="stylesheet" href="css/common.css">
+	    <link rel="stylesheet" href="css/zb.css">
+</head>
+<body>
+<section id="plbh-top"></section>
+
+	
+
+	<header id="header-tit" class="oh bk">
+	   <i class="iconfont Back"><a href='javascript:;'><img src="img/p_15.png"></a></i>
+	   
+	</header>
+<section class="zb-banner">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zb-baner-tab">
+      <!--<tr>
+        <th>&nbsp;</th>
+        <th>英超联赛</th>
+        <th>&nbsp;</th>
+      </tr>
+      <tr>
+        <td rowspan="2">曼彻斯特联</td>
+        <td>2017-03-07  周三</td>
+        <td rowspan="2">曼彻斯特联</td>
+      </tr>
+      <tr>
+        <td>03:00</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>老特拉福德球场</td>
+        <td>&nbsp;</td>
+      </tr>-->
+    </table>
+    <div class="zb-baner-list">
+    	<aside class="dl zb-baner-vs">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+               				<td><img src="img/p_18.png"></td>
+							<td class="z_str_hong">
+								0<!--<span>1</span>-->
+							</td>
+							<td><img src="img/p_17.png"></td>
+							<td class="z_huang_g">
+								0<!--<span>2</span>-->
+							</td>
+							<td>
+								<img src="img/p_16.png">
+								<td class="z_str_jiao">
+									0	<!--<span>3</span>-->
+								</td>
+							</td>
+              </tr>
+            </table>
+        </aside>
+        <aside class="dr zb-baner-vs2">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+              				<td><img src="img/p_16.png"></td>
+                			<td class="kk_jiao">
+                				0
+								<!--<span>3</span>-->
+							</td>
+							<td><img src="img/p_17.png"></td>
+							<td class="kk_huang">
+								0
+								<!--<span>1</span>-->
+							</td>
+							<td><img src="img/p_18.png"></td>
+							<td class="kk_hong">
+								0<!--<span>2</span>-->
+							</td>
+							
+              </tr>
+            </table>
+        </aside>
+    </div>
+</section>
+
+<section class="zb-nav plbh-nav">
+	<ul>
+    	<li><a href="javascript:;">直播</a></li>
+      	<li class="zb-on"><a href="javascript:;">指数</a></li>
+    </ul>
+</section>
+</header>
+<div class="com zhibo" style="display:none;">
+	<section class="zb-box oh oZhen kb">
+			
+			<!--阵容 -->
+			
+			<div class="zb-nav-box array-box mb care1 oImg_zhen">
+				
+				
+				<!--<img src="img/kong.png"/>-->
+				<!--<aside class="array-left dl">
+        	<table width="100%%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th><p class="array-tit">主队阵容</p></th>
+              </tr>
+              <tr>
+                <td>1. 塞萨尔</td>
+              </tr>
+              <tr>
+                <td>2. 阿圭罗</td>
+              </tr>
+              <tr>
+                <td>3. 席尔瓦</td>
+              </tr>
+              <tr>
+                <td>4. 罗纳尔</td>
+              </tr>
+              <tr>
+                <td>5. 里瓦尔</td>
+              </tr>
+              <tr>
+                <td>6. 德布劳内</td>
+              </tr>
+              <tr>
+                <td>7. 罗纳尔多</td>
+              </tr>
+              <tr>
+                <td>8. 里瓦尔多</td>
+              </tr>
+              <tr>
+                <td>9. 德布劳内</td>
+              </tr>
+              <tr>
+                <td>10. 里瓦尔多</td>
+              </tr>
+              <tr>
+                <td>11. 德布劳内</td>
+              </tr>
+            </table>        	
+        </aside>
+        <aside class="array-right dr">
+        	<table width="100%%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th><p class="array-tit2 dr">客队阵容</p></th>
+              </tr>
+              <tr>
+                <td>1. 塞萨尔</td>
+              </tr>
+              <tr>
+                <td>2. 阿圭罗</td>
+              </tr>
+              <tr>
+                <td>3. 席尔瓦</td>
+              </tr>
+              <tr>
+                <td>4. 罗纳尔</td>
+              </tr>
+              <tr>
+                <td>5. 里瓦尔</td>
+              </tr>
+              <tr>
+                <td>6. 德布劳内</td>
+              </tr>
+              <tr>
+                <td>7. 罗纳尔多</td>
+              </tr>
+              <tr>
+                <td>8. 里瓦尔多</td>
+              </tr>
+              <tr>
+                <td>9. 德布劳内</td>
+              </tr>
+              <tr>
+                <td>10. 里瓦尔多</td>
+              </tr>
+              <tr>
+                <td>11. 德布劳内</td>
+              </tr>
+            </table>
+        </aside>-->
+			</div>
+			<!--end阵容 -->
+			<!--统计 -->
+			<div class="zb-nav-box dn oIm kb care2">
+		
+				<div id="tong" class="live-rate-box oh">
+
+					<div class="live-rate-list oh rate-marge thing1 o_L">
+						<div class="oLeft">
+							<div class="rate-li oh o_L1">
+								<aside class="dl rate-text zi">
+									<p class="tl tc_jiao1">0
+								<!--<span></span>-->
+									</p>
+									<p class="oJiao oName_l">角球</p>
+									<p class="tr tc_jiao2">0
+										<!--<span></span>-->
+									</p>
+								</aside>
+							</div>
+							<div class="rate-bar oh o_L2">
+								<aside class="dl oBig"><span class="tiao"></span><i></i></aside>
+							</div>
+						</div>
+						<div class="oRight">
+							<div class="rate-li oh o_L1">
+								<aside class="dl rate-text zi">
+									<p class="tl tc_wei1">0
+								<!--<span></span>-->
+									</p>
+									<p class="oJin oName_l">危险进攻</p>
+									<p class="tr tc_wei2">0
+										<!--<span></span>-->
+									</p>
+								</aside>
+							</div>
+							<div class="rate-bar oh o_L2">
+								<aside class="dl oBig1"><span class="tiao"></span><i></i></aside>
+							</div>
+						</div>
+
+					</div>
+					<div class="live-rate-list oh thing2">
+						<div class="rate-li oh">
+							<p class="tl tc_jin1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">进球</p>
+							<p class="tr tc_jin2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_jin"><span></span></aside>
+							<aside class="dr barContro_space-two oBig_jin1"><span></span></aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing3">
+						<div class="rate-li oh">
+							<p class="tl tc_huang1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">黄牌</p>
+							<p class="tr tc_huang2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_huang"><span></span></aside>
+							<aside class="dr barContro_space-two oBig_huang1"><span></span></aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing4">
+						<div class="rate-li oh">
+							<p class="tl tt1 zs-grey">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc tc_hong oName">红牌</p>
+							<p class="tr tt2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_hong">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_hong1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing5">
+						<div class="rate-li oh">
+							<p class="tl tt1 tc_ren1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">危险任意球</p>
+							<p class="tr tt2 tc_ren2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_ren">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_ren1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing6">
+						<div class="rate-li oh">
+							<p class="tl tt1 tc_she1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">射正球门</p>
+							<p class="tr tt2 tc_she2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_she">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_she1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+
+					<div class="live-rate-list oh thing8">
+
+						<div class="rate-li oh">
+							<p class="tl tt1 aa">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc tc_huan oName">换人</p>
+							<p class="tr tt2 bb">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_huan">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_huan1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing9">
+						<div class="rate-li oh">
+							<p class="tl tt1 tc_fan1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">犯规</p>
+							<p class="tr tt2 tc_fan2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_fan">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_fan1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing10">
+						<div class="rate-li oh">
+							<p class="tl tc_yue1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">越位</p>
+							<p class="tr tc_yue2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_yue">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_yue1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+					<div class="live-rate-list oh thing11">
+						<div class="rate-li oh">
+							<p class="tl tc_jie1">0
+								<!--<span></span>-->
+							</p>
+							<p class="tc oName">界外球</p>
+							<p class="tr tc_jie2">0
+								<!--<span></span>-->
+							</p>
+						</div>
+						<div class="rate-bar oh">
+							<aside class="dl barContro_space oBig_jie">
+								<span></span>
+							</aside>
+							<aside class="dr barContro_space-two oBig_jie1">
+								<span></span>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end统计 -->
+			<!--文字 -->
+			<div class="zb-nav-box dn oImg_wen nav-line kb care3">
+				
+					<div class="writing">
+			        	<div class="writ-f-table font_cn">
+			        		
+			            	<!--左边 -->
+			                <!--<div class="new-f-table">
+			            		<div class="line_01"><span class="writ-folat">88'</span> </div>
+			                	<div class="dl folat-list-l">
+			                		<img src="img/p_18.png"/>
+			                		<p class=" writ-red">球进了球进了球进了球进了球进了球进了球进了</p>
+			                	</div>
+			                </div>-->
+			                
+			                <!--右边 -->
+			                <!--<div class="new-f-table">
+			                	<div class="line_01"><span class="writ-folat2">42'</span></div>
+								<div class="dr folat-list-r"><p>射门偏出射门偏出射门偏出射门偏出射门偏出射门偏出门</p></div>
+			                </div>-->
+			        	</div>
+			    	</div>  
+
+	
+			</div>
+				<!--<div class="line_01"><span class="writ-folat2">6</span></div>
+						<div class="dr folat-list-l folat-marge">
+							<p class=" writ-red">宿建德江</p>
+							<p>茶市场开始</p>
+						</div>
+						<div class="line_01"><span class="writ-folat2">8</span></div>
+						<div class="dr folat-list-r">
+							<p>下萨克</p>
+							<p>上班经销商</p>
+						</div>
+						<div class="line_01"><span class="writ-folat3">20</span></div>
+						<div class="dr folat-list-r folat-marge2">
+							<p>撒娇</p>
+							<p>洒下上看下看</p>
+						</div>-->
+
+				<!--左边 -->
+				<!--<div class="line_01"><span class="writ-folat">88'</span> </div>
+                <div class="dl folat-list-l">
+                	<p class=" writ-red">球进了</p>
+                </div>
+                
+                <div class="line_01"><span class="writ-folat2">58'</span></div>
+				<div class="dr folat-list-l folat-marge">
+                	<p class=" writ-red">角球（左侧）</p>
+                </div>-->
+				<!--右边 -->
+				<!--<div class="line_01"><span class="writ-folat2">42'</span></div>
+				<div class="dr folat-list-r">
+					<p>射门偏出</p>
+				</div>
+				
+               	<div class="line_01"><span class="writ-folat3">19'</span></div>
+				<div class="dr folat-list-r folat-marge2">
+					<p>危险进攻</p>
+				</div>-->
+
+			
+			<!--end文字 -->
+			<!--事件 -->
+			<div class="zb-nav-box dn event-box-line kb care4">
+				
+		    	<div class="event-box thing_event">
+		        	<!--<div class="new-f-table">
+		            		<div class="line_01"><span class="writ-folat">88'</span> </div>
+		                	<div class="dl event-list-txt oh">
+		                		<span class="event-img dr"><img src="img/p_5.png" style="display:block!important"></span>
+		                        <p class=" writ-red new-writ-red dr">球进了球进了球进了球进了球进了球进了球进了</p>
+		                     </div>
+		             </div>-->
+		             
+		             <!--右 -->
+		             <!--<div class="new-f-table">
+		            		<div class="line_01"><span class="writ-folat">88'</span> </div>
+		                	<div class="dl event-list-txt2 oh">
+		                		<span class="event-img dl"><img src="img/p_24.png"></span>
+		                        <p class="new-writ-red dl">球进了球进了球进了球进了球进了球进了球进了</p>
+		                    </div>
+		             </div>-->
+		        </div>
+			</div>
+			<!--end事件 -->
+			<!--走势-->
+			<div class="zb-nav-box dn oImg_zou kb care5">
+				
+				<aside id="main1" class="zb-table"></aside>
+				<aside id="main2" class="zb-table2"></aside>
+			</div>
+			<!--end走势 -->
+			<div class="zb-fot-nav">
+				<ul>
+					<li class="zb-on2">阵容</li>
+					<li class="click_fresh">统计</li>
+					<li>文字</li>
+					<li>事件</li>
+					<li>走势</li>
+				</ul>
+			</div>
+		</section>
+		<!--指数-->
+		<section class="zb-box oh zs-main dn">
+			<!--亚盘-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zs-box a_y2">
+				
+				<!--<tr class="zs-time_y">
+					<th>公司</th>
+					<th>&nbsp;</th>
+					<th>主队</th>
+					<th>盘口</th>
+					<th>客队</th>
+					<th>&nbsp;</th>
+				</tr>-->
+				<img src="img/kong.png" class="zhi_ya_img" />
+				<!--<tr class="zs-time zs-time_y">
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="3">亚盘2017-03-15</td>
+					<td>&nbsp;</td>
+				</tr>-->
+				<!--<tr>
+					<td rowspan="2">SB</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="plbh.html"><img src="img/p_27.png"></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">WinBet</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">SB0</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">IBC</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">ISN</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>-->
+				<tr class="hei" style="border:0;">
+					
+					
+				</tr>
+				
+			</table>
+			<!--欧赔-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zs-box dn a_o1">
+				
+				
+				<!--<tr class="zs-time zs-time_o">
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="3">欧赔2017-03-15</td>
+					<td>&nbsp;</td>
+				</tr>-->
+				<!--<tr>
+					<td rowspan="2">SB</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png"></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">WinBet</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">SB0</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">IBC</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">ISN</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>-->
+				<tr class="ha" style="border:0;">
+					
+					
+				</tr>
+			</table>
+			<!--大小球-->
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="zs-box dn a_d3">
+				
+			
+				<!--<tr class="zs-time zs-time_d">
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td colspan="3">大小球2017-03-15</td>
+					<td>&nbsp;</td>
+				</tr>-->
+				<!--<tr>
+					<td rowspan="2">SB</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png"></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>-->
+				<!--<tr>
+					<td rowspan="2">WinBet</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">SB0</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">IBC</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="zs-time">&nbsp;</td>
+				</tr>
+				<tr>
+					<td rowspan="2">ISN</td>
+					<td>即赔</td>
+					<td><span class="zs-gree">0.31</span></td>
+					<td><span class="zs-gree">平手</span></td>
+					<td><span class="zs-red">2.23</span></td>
+					<td rowspan="2"><i class="zs-iconfont"><a href="/"><img src="img/p_27.png" alt=""></a></i></td>
+				</tr>
+				<tr>
+					<td><span class="zs-grey">初赔</span></td>
+					<td>0.83</td>
+					<td>平/半</td>
+					<td>0.09</td>
+				</tr>-->
+				<tr class="he" style="border:0;">
+					
+					
+				</tr>
+			</table>
+			<div class="zs-nav">
+				<ul>
+					<li class="zs-on">亚盘</li>
+					<li>欧赔</li>
+					<li>大小球</li>
+				</ul>
+			</div>
+		</section>
+</div>
+<div class="com box-main odd zhishu">
+    
+
+<!--新架构-->
+<!--亚盘-->
+<section class="oh new-yp-box ya">
+	<section class="pl-anau">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-box">
+          <tr>
+            <th class="pl_gong">公司</th>
+            <th class="pl_shi">时间</th>
+            <th class="pl_zhu">主队</th>
+            <th class="pl_pan">盘口</th>
+            <th class="pl_ke">客队</th>
+            
+          </tr>
+        </table>
+    </section>
+	<aside class="dl new-yp-left">
+    	<div class="yp-nav pl_y">
+        	<ul>
+        	
+            	<li>利记</li>
+                <li>澳彩</li>
+                <li>智博</li>
+                <li>皇冠</li>
+                <li>浩博</li>
+                <li>沙巴</li>
+ 
+                <div class="return" id="back"><a href="javascript:;"><p><img src="img/p_25.png"></p>返回列表</a></div>
+            </ul>
+        </div>
+    </aside>
+    <aside class="dl new-yp-right">
+    	
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box b1">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b2">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b3">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b4">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b5">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b6">
+            
+        </table>
+    </aside>
+</section>
+<!--欧盘-->
+<section class="oh new-yp-box dn">
+	<section class="pl-anau">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-box">
+          <tr>
+            <th class="pl_gong">公司</th>
+            <th class="pl_shi">时间</th>
+            <th class="pl_zhu">主队</th>
+            <th class="pl_pan">盘口</th>
+            <th class="pl_ke">客队</th>
+          </tr>
+        </table>
+    </section>
+	<aside class="dl new-yp-left">
+    	<div class="yp-nav pl_o">
+        	<ul>
+            	<li>利记</li>
+                <li>澳彩</li>
+                <li>智博</li>
+                <li>皇冠</li>
+                <li>浩博</li>
+                <li>沙巴</li>
+                <div class="return"><a href="javascript:;"><p><img src="img/p_25.png"></p>返回列表</a></div>
+            </ul>
+        </div>
+    </aside>
+    <aside class="dl new-yp-right">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box ou1">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou2">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou3">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou4">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou5">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou6">
+              
+        </table>
+    </aside>
+</section>
+<!--大小球-->
+<section class="oh new-yp-box dx">
+	<section class="pl-anau">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-box">
+          <tr>
+            <th class="pl_gong">公司</th>
+            <th class="pl_shi">时间</th>
+            <th class="pl_zhu">主队</th>
+            <th class="pl_pan">盘口</th>
+            <th class="pl_ke">客队</th>
+          </tr>
+        </table>
+    </section>
+	<aside class="dl new-yp-left">
+    	<div class="yp-nav pl_d">
+        	<ul>
+            	<li>利记</li>
+                <li>澳彩</li>
+                <li>智博</li>
+                <li>皇冠</li>
+                <li>浩博</li>
+                <li>沙巴</li>
+                <div class="return"><a href="javascript:;"><p><img src="img/p_25.png"></p>返回列表</a></div>
+            </ul>
+        </div>
+    </aside>
+    <aside class="dl new-yp-right">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box da1">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da2">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da3">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da4">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da5">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da6">
+              
+        </table>
+    </aside>
+</section>
+
+
+</div>
+
+<div class="zs-nav2">
+    <ul>
+        <li class="zs-on2">亚盘</li>
+        <li>欧赔</li>
+        <li>大小球</li>
+    </ul>	
+</div>
+<script src="js/lib/echarts.simple.min.js"></script>
+<script src="js/sea.js" id="seajsnode"></script>
+<script src="js/config.js"></script>
+<script type="text/javascript">
+	seajs.use('plbh', function (main) {
+        main.init();
+    })
+</script>
+</body>
+</html>
+
+
+

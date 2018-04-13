@@ -1,0 +1,254 @@
+define(function(require, exports, module) {
+	var $ = require("jquery");
+	var getD = require("getData");
+	var e = require("event");
+	var href = getD.href();
+	function init(){
+		if(localStorage.length == 0){
+			var	gameType = '2';
+			var tdms = 'lj,sb';
+			var playStat = 0;
+			//console.log(666);
+			//获取全部联赛id		
+			getD.getSet({playStat:playStat}, function(data) {
+				
+				//获取热门联赛ID
+				var arr = [];
+				for(var i = 0; i < data.length; i++) {
+					if(data[i].matchCount != 0){
+						arr.push(data[i].id);
+					}		
+				}
+				var leagues = arr.join();
+				//console.log(leagues);
+				init_data(gameType,tdms,playStat,leagues,oTime)
+			});
+		}
+		else{
+			var tdms = localStorage.getItem('tdms');
+			var gameType = localStorage.getItem('gameType');
+			var playStat = localStorage.getItem('playStat');
+			var leagues = localStorage.getItem('leagues');
+			var oTime = localStorage.getItem('mon');
+			localStorage.clear();
+//			console.log(tdms );
+//			console.log(gameType);
+//			console.log(playStat);
+//			console.log(leagues);
+//			console.log(oTime);
+			if(playStat == 2){var oTime = '';}
+			if(playStat == 0){var oTime = oTime;}
+			if(playStat == 1){var oTime = oTime;}
+			//console.log(leagues);
+			
+			if(playStat == 0){$(".live-tabs li:eq(0)").addClass("livezs-on").siblings().removeClass("livezs-on");$("#index_top .livezs-box:eq(0)").show().siblings().hide();$("#header-fix").show();}
+			if(playStat == 2){$(".live-tabs li:eq(1)").addClass("livezs-on").siblings().removeClass("livezs-on");$("#index_top .livezs-box:eq(1)").show().siblings().hide();$("#header-fix").show();}
+			if(playStat == 1){$(".live-tabs li:eq(2)").addClass("livezs-on").siblings().removeClass("livezs-on");$("#index_top .livezs-box:eq(2)").show().siblings().hide();$("#header-fix").show();}
+			init_data(gameType,tdms,playStat,leagues,oTime);
+		}
+		//获取所有联赛id
+		
+		function init_data(gameType,tdms,playStat,leagues,oTime){
+
+			getD.get_future({leagues:leagues,gameType:gameType,tdms:tdms,playStat:playStat,oTime :oTime},function(data){
+				
+				if(data == '') {
+					$(".box-one").empty();return $(".box-one").html(getD.kong_zhi("<img src='img/kong.png'>","暂无数据"));
+				}else{
+					getD.getFuture(data,playStat,gameType)
+				}
+				
+			});
+			//点击头部未开赛调取数据
+			click_wei();
+			function click_wei(){
+				$(".live-tabs ul").on("click","li:nth-of-type(1)",function(){
+					getD.loader("show",$(".box-one"));
+
+					if(localStorage.length == 0){
+						if($("li[data-type=1]").text() == '欧赔'){var gameType = 1}
+						if($("li[data-type=1]").text() == '亚盘'){var gameType = 2}
+						if($("li[data-type=1]").text() == '大小球'){var gameType = 3}
+						var arr = [];
+						$("li[data-id=1]").each(function(){
+							if($(this).attr('data-id')==1){
+								var tdms = $(this).text();
+								if(tdms == '利记'){tdms = 'lj';}
+								if(tdms == '澳彩'){tdms = 'ms';}
+								if(tdms == '智博'){tdms = 'bw';}
+								if(tdms == '皇冠'){tdms = 'hg';}
+								if(tdms == '浩博'){tdms = 'hb';}
+								if(tdms == '沙巴'){tdms = 'sb';}			
+							}
+							arr.push(tdms);
+						})
+						var tdms = arr.join();
+						var playStat = 0;
+						getD.getSet({playStat:playStat}, function(data) {
+							//console.log(data);
+							//获取热门联赛ID
+							var arr = [];
+							for(var i = 0; i < data.length; i++) {
+								if(data[i].matchCount != 0){
+									arr.push(data[i].id);
+								}		
+							}
+							var leagues = arr.join();
+						//	console.log(leagues);
+							sai(leagues,gameType,tdms,playStat);
+						});
+					}else{
+						var tdms = localStorage.getItem('tdms');
+						var gameType = localStorage.getItem('gameType');
+						var playStat = 0;
+						var leagues = localStorage.getItem('leagues');
+						var oTime = localStorage.getItem('mon');
+						
+						sai(leagues,gameType,tdms,playStat,oTime);
+					}
+					function sai(leagues,gameType,tdms,playStat,oTime){
+						getD.get_future({leagues:leagues,gameType:gameType,tdms:tdms,playStat:playStat,oTime:oTime},function(data){
+							if(data == '') {
+								$(".box-one").empty();return $(".box-one").html(getD.kong_zhi("<img src='img/kong.png'>","暂无数据"));
+							}
+							getD.getFuture(data,playStat2,gameType)
+						});
+					}
+					
+				})
+			}
+			//点击头部滚球调取数据
+			click_circle();
+			function click_circle(){
+				$(".live-tabs ul").on("click","li:nth-of-type(2)",function(){
+					$(".box-two").empty();
+					getD.loader("show",$(".box-two"));
+					
+					if(localStorage.length == 0){
+						if($("li[data-type=1]").text() == '欧赔'){var gameType = 1}
+						if($("li[data-type=1]").text() == '亚盘'){var gameType = 2}
+						if($("li[data-type=1]").text() == '大小球'){var gameType = 3}
+						var arr = [];
+						$("li[data-id=1]").each(function(){
+							if($(this).attr('data-id')==1){
+								var tdms = $(this).text();
+								if(tdms == '利记'){tdms = 'lj';}
+								if(tdms == '澳彩'){tdms = 'ms';}
+								if(tdms == '智博'){tdms = 'bw';}
+								if(tdms == '皇冠'){tdms = 'hg';}
+								if(tdms == '浩博'){tdms = 'hb';}
+								if(tdms == '沙巴'){tdms = 'sb';}			
+							}
+							arr.push(tdms);
+						})
+						var tdms = arr.join();
+						var playStat = 2;
+						getD.getSet({playStat:playStat}, function(data) {
+							//console.log(data);
+							//获取热门联赛ID
+							var arr = [];
+							for(var i = 0; i < data.length; i++) {
+								if(data[i].matchCount != 0){
+									arr.push(data[i].id);
+								}		
+							}
+							var leagues = arr.join();
+						//	console.log(leagues);
+							gun(leagues,gameType,tdms,playStat);
+						});
+					}else{
+						var tdms = localStorage.getItem('tdms');
+						var gameType = localStorage.getItem('gameType');
+						var playStat = 2;
+						var leagues = localStorage.getItem('leagues');
+						var oTime = localStorage.getItem('mon');
+						gun(leagues,gameType,tdms,playStat);
+					}
+					function gun(leagues,gameType,tdms,playStat){
+						
+							getD.get_future({leagues:leagues,gameType:gameType,tdms:tdms,playStat:playStat},function(data){
+								//console.log(data);
+								if(data == '') {
+									$(".box-two").empty();return $(".box-two").html(getD.kong_zhi("<img src='img/kong.png'>","暂无数据"));
+								}
+								
+								getD.getFuture(data,playStat,gameType)
+							});
+						
+					}
+				})
+			}
+			//点击头部完场调取数据
+			click_end();
+			function click_end(){
+				$(".live-tabs ul").on("click","li:nth-of-type(3)",function(){
+					$(".box-three").empty();
+					getD.loader("show",$(".box-three"));
+					if(localStorage.length == 0){
+						if($("li[data-type=1]").text() == '欧赔'){var gameType = 1}
+						if($("li[data-type=1]").text() == '亚盘'){var gameType = 2}
+						if($("li[data-type=1]").text() == '大小球'){var gameType = 3}
+						var arr = [];
+						$("li[data-id=1]").each(function(){
+							if($(this).attr('data-id')==1){
+								var tdms = $(this).text();
+								if(tdms == '利记'){tdms = 'lj';}
+								if(tdms == '澳彩'){tdms = 'ms';}
+								if(tdms == '智博'){tdms = 'bw';}
+								if(tdms == '皇冠'){tdms = 'hg';}
+								if(tdms == '浩博'){tdms = 'hb';}
+								if(tdms == '沙巴'){tdms = 'sb';}			
+							}
+							arr.push(tdms);
+						})
+						var tdms = arr.join();
+						var playStat = 1;
+						getD.getSet({playStat:playStat}, function(data) {
+							//console.log(data);
+							//获取热门联赛ID
+							var arr = [];
+							for(var i = 0; i < data.length; i++) {
+								if(data[i].matchCount != 0){
+									arr.push(data[i].id);
+								}		
+							}
+							var leagues = arr.join();
+						//	console.log(leagues);
+							wan(leagues,gameType,tdms,playStat);
+						});
+					}else{
+						var tdms = localStorage.getItem('tdms');
+						var gameType = localStorage.getItem('gameType');
+						var playStat = 1;
+						var leagues = localStorage.getItem('leagues');
+						var oTime = localStorage.getItem('mon');
+						
+						wan(leagues,gameType,tdms,playStat,oTime);
+					}
+					function wan(leagues,gameType,tdms,playStat,oTime){
+						getD.get_future({leagues:leagues,gameType:gameType,tdms:tdms,playStat:playStat,oTime:oTime},function(data){
+							if(data == '') {
+								$(".box-three").empty();return $(".box-three").html(getD.kong_zhi("<img src='img/kong.png'>","暂无数据"));
+							}
+							getD.getFuture(data,playStat,gameType)
+						});
+					}
+				})
+			}
+		}
+		//指数header选项卡点击切换
+		e.bt();
+		//点击设置
+		getD.setUp();
+		//指数页面筛选日期选项卡点击切换及调取数据
+		e.cli_data();
+		//指数主页筛选页面事件
+		e.select_page();
+		e.cli_select();
+		//点击每一天联赛的赔率，跳转页面
+		e.click_odds();
+	}
+	return {
+		init : init
+	}
+})

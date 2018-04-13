@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>比赛直播-足球指数</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/inner.css">
+    
+</head>
+<body id="bjcolor-grey">
+<!--筛选开始-->
+<div id="sx-box" class="dn">
+	<div class="index_fix">
+		<header id="header-live" class="live-header">
+		    <i class="iconfont-filter live-header-tit" id="out-btn"><a href="index.html"><img src="img/score/zb_c5.png"></a></i>
+		    <span class="dr live-install selectIng" id="sx-bf"><a href="javascript:;">确定</a></span>
+		  <div class="live-ball">足球指数</div>
+		</header>
+		<section class="footb-sx-tabs">
+			<ul>
+				<li class="footb-sx-on">全部</li>
+				<li>热门</li>		
+				<li>焦点</li>
+			</ul>
+		</section>
+	</div>
+	<div class="index_cen">
+		
+	<!-- 全部 -->
+	<section class="footb-sx-box">
+		<div class="sx-box-tit oh">
+	    	<h2 class="dl">全部</h2>
+	        <div class="dr sx-box-asid sx-box-asid3">
+	        	<ul>
+	            	<li><img class="sx-img" data-id="0" id="sx-img" src="img/score/zb_c9.png"></li>
+	                <li>全选</li>
+	                <li class="sx-film allNum_xian3">
+	                	<span>共</span>
+	                	<span class="color_active"></span>
+	                	<span>场</span>
+	                </li>
+	                <li class="sx-film allNum_yin3">
+	                	<span>隐藏</span>
+	                	<span class="color_active"></span>
+	                	<span>场</span>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="sx-box-list sx-box-list3">
+	    	<ul class="oh top_league">
+	            <!--<li><span class="dl">意甲</span><span class="dr">21</span></li>-->
+	            <!--<li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>-->
+	        </ul>
+	    </div>
+	    <div class="sx-box-tit oh">
+	    	<h2 class="dl">其他</h2>
+	    </div>
+	    <div class="sx-box-othe">
+	    	<ul class="oh bottom_league">
+	            <!--<li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>-->
+	        </ul>
+	    </div>
+	</section>
+	<!-- 热门 -->
+	<section class="footb-sx-box dn">
+		<div class="sx-box-tit oh">
+	    	<h2 class="dl">热门</h2>
+	        <div class="dr sx-box-asid sx-box-asid1">
+	        	<ul>
+	            	<li><img class="sx-img" data-id="0" id="sx-img" src="img/score/zb_c9.png"></li>
+                <li>全选</li>
+                <li class="sx-film allNum_xian1">
+                	<span>共</span>
+                	<span class="color_active"></span>
+                	<span>场</span>
+                </li>
+                <li class="sx-film allNum_yin1">
+                	<span>隐藏</span>
+                	<span class="color_active"></span>
+                	<span>场</span>
+                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="sx-box-list sx-box-list1">
+	    	<ul class="oh hot_top">
+	            <!--<li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>-->
+	        </ul>
+	    </div>
+	    <div class="sx-box-tit oh">
+	    	<h2 class="dl">其他</h2>
+	    </div>
+	    <div class="sx-box-othe">
+	    	<ul class="oh hot_bottom">
+	            <!--<li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>-->
+	        </ul>
+	    </div>
+	</section>
+	<!-- 焦点 -->
+	<section class="footb-sx-box dn">
+		<div class="sx-box-tit oh">
+	    	<h2 class="dl">焦点</h2>
+	        <div class="dr sx-box-asid sx-box-asid2">
+	        	<ul>
+	            	<li><img class="sx-img" data-id="0" id="sx-img" src="img/score/zb_c9.png"></li>
+	                <li>全选</li>
+	                <li class="sx-film allNum_xian2">
+	                	<span>共</span>
+	                	<span class="color_active"></span>
+	                	<span>场</span>
+	                </li>
+	                <li class="sx-film allNum_yin2">
+	                	<span>隐藏</span>
+	                	<span class="color_active"></span>
+	                	<span>场</span>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="sx-box-list sx-box-list2">
+	    	<ul class="oh jiao_top">
+	            <!--<li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">21</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">1</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">1</span></li>-->
+	        </ul>
+	    </div>
+	    <div class="sx-box-tit oh">
+	    	<h2 class="dl">其他</h2>
+	    </div>
+	    <div class="sx-box-othe">
+	    	<ul class="oh jiao_bottom">
+	            <!--<li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">意甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">法甲</span><span class="dr">0</span></li>
+	            <li><span class="dl">西甲</span><span class="dr">0</span></li>-->
+	        </ul>
+	    </div>
+	</section>
+	
+	</div>
+</div>
+</div>
+<!--筛选结束-->
+<!-- 遮罩 -->
+<section id="live-mask" class="dn">
+    <div class="mask-list">
+        <ul class="mast-tab">
+            <!--<li>近7天完场赛事</li>
+            <li>最近</li>
+            <li class="mast-on">6月05日  周一</li>
+            <li>6月04日  周日</li>
+            <li>6月03日  周六</li>
+            <li>6月02日  周五</li>
+            <li>6月01日  周四</li>
+            <li>5月31日  周三</li>
+            <li>5月30日  周二</li>-->
+        </ul>
+        <div id="mast-cloe" class="mast-cloe tc"><img src="img/score/zb_c6.png"></div>
+    </div>
+</section>
+<!-- 遮罩end -->   
+<div id="index_top">
+	
+	<div id="header-fix">
+		<header id="header-live" class="live-header">
+		    <i class="iconfont-filter live-header-tit"><a href="javascript:;"><img src="img/score/zb_c5.png"></a></i>
+		    <span class="dr live-scree"><a href="javascript:;">筛选</a></span>
+		    <span class="dr live-install"><a href="javascript:;">设置</a></span>
+		  	<div class="live-ball">足球指数</div>
+		</header>
+		<section class="live-tabs">
+			<ul>
+				<li class="livezs-on">未开赛</li>		
+				<li>滚球</li>
+		        <li>完场</li>
+			</ul>
+		</section>
+	</div>
+<section class="livezs-box box-one">
+	<!--<div class="livezs-data oh">
+    	<div class="dl t11">2017/06/06 星期二</div>
+        <div class="dr" id="live-btn"><img src="img/score/zb_c4.png"></div>
+    </div>
+    <div class="livezs-libs">
+   	  	<div class="livezs-lister">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>澳洲甲澳洲甲</td>
+                <td>21:30</td>
+                <td>
+                	<div class="dl"><div class="dl">悉尼悉悉尼FC</div><div class="dl"><div class="dl deepred exp-bf"><span style="color: rgb(102, 102, 102);">-</span><span style="color: rgb(102, 102, 102);">:</span><span style="color: rgb(102, 102, 102);">-</span></div><div class="dl">中央海岸央海岸</div></div></div>
+                </td>
+              </tr>
+            </table>
+      	</div>
+        <div class="livezs-lis-tab">
+        	<table width="100%%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th>公司</th>
+                <th>&nbsp;</th>
+                <th>主胜</th>
+                <th>盘口</th>
+                <th>客胜</th>
+              </tr>
+              <tr>
+                <td rowspan="2">沙巴</td>
+                <td>即赔</td>
+                <td>0.62</td>
+                <td>受平/半</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td>初赔</td>
+                <td>0.79</td>
+                <td>平手</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td rowspan="2">沙巴</td>
+                <td>即赔</td>
+                <td>0.62</td>
+                <td>受平/半</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td>初赔</td>
+                <td>0.79</td>
+                <td>平手</td>
+                <td>1.38</td>
+              </tr>
+            </table>
+  		</div>
+    </div>-->
+  	
+</section>
+<!-- 滚球 -->
+<section class="livezs-box dn box-two">
+	<!--<div class="livezs-data oh">
+    	<div class="dl t11">2017/06/06 星期三</div>
+        <div class="dr" id="live-btn"><img src="img/score/zb_c4.png"></div>
+    </div>
+	<div class="livezs-libs">
+   	  	<div class="livezs-lister">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>澳洲甲澳洲甲</td>
+                <td>90+</td>
+                <td>
+                	<div class="dl"><div class="dl">悉尼悉悉尼FC</div><div class="dl"><div class="dl deepred live-bf"><span>1</span><span>:</span><span>1</span></div><div class="dl">中央海岸央海岸</div></div></div>
+                </td>
+              </tr>
+            </table>
+      	</div>
+        <div class="livezs-lis-tab">
+        	<table width="100%%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th>公司</th>
+                <th>&nbsp;</th>
+                <th>主胜</th>
+                <th>盘口</th>
+                <th>客胜</th>
+              </tr>
+              <tr>
+                <td rowspan="2">沙巴</td>
+                <td>即赔</td>
+                <td>0.62</td>
+                <td>受平/半</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td>初赔</td>
+                <td>0.79</td>
+                <td>平手</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td rowspan="2">沙巴</td>
+                <td>即赔</td>
+                <td>0.62</td>
+                <td>受平/半</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td>初赔</td>
+                <td>0.79</td>
+                <td>平手</td>
+                <td>1.38</td>
+              </tr>
+            </table>
+  		</div>
+  </div>-->
+</section>
+<!-- 完场 -->
+<section class="livezs-box dn box-three">
+	<!--<div class="livezs-data oh">
+    	<div class="dl t11">2017/06/06 星期四</div>
+        <div class="dr" id="live-btn"><img src="img/score/zb_c4.png"></div>
+    </div>
+	<div class="livezs-libs">
+   	  	<div class="livezs-lister">
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>澳洲甲澳洲甲</td>
+                <td>21:30</td>
+                <td>
+                	<div class="dl"><div class="dl">悉尼悉悉尼FC</div><div class="dl"><div class="dl deepred live-bf"><span>1</span><span>:</span><span>1</span></div><div class="dl">中央海岸央海岸</div></div></div>
+                </td>
+              </tr>
+            </table>
+      	</div>
+        <div class="livezs-lis-tab">
+        	<table width="100%%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th>公司</th>
+                <th>&nbsp;</th>
+                <th>主胜</th>
+                <th>盘口</th>
+                <th>客胜</th>
+              </tr>
+              <tr>
+                <td rowspan="2">沙巴</td>
+                <td>即赔</td>
+                <td>0.62</td>
+                <td>受平/半</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td>初赔</td>
+                <td>0.79</td>
+                <td>平手</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td rowspan="2">沙巴</td>
+                <td>即赔</td>
+                <td>0.62</td>
+                <td>受平/半</td>
+                <td>1.38</td>
+              </tr>
+              <tr>
+                <td>初赔</td>
+                <td>0.79</td>
+                <td>平手</td>
+                <td>1.38</td>
+              </tr>
+            </table>
+  		</div>
+  </div>-->
+</section>
+</div>
+<!--设置-->
+<div id="set">
+	<header id="header-live">
+	    <i class="iconfont-filter live-header-tit in_back"><a href="index.html"><img src="img/score/zb_c5.png"></a></i>
+	  	<center><h1>设置</h1></center>
+	</header>
+	<section class="main-filter">
+		<h1>选择公司<span class="t12">（多选）</span></h1>
+	    <div class="filter-box">
+	    	<ul class="oh">
+	    		<li class="fil-hove" data-id="1" data-tdm="lj">利记</li>
+	            <li data-id="0" data-tdm="ms">澳彩</li>
+	            <li data-id="0" data-tdm="hg">皇冠</li>
+	            <li data-id="0" data-tdm="bw">智博</li>
+	            <li data-id="0" data-tdm="hb">浩博</li>
+	            <li class="fil-hove" data-id="1" data-tdm="sb">沙巴</li>
+	        </ul>
+	    </div>
+	</section>
+	<section class="main-datatype">
+		<h1>选择数据类型<span class="t12">（单选）</span></h1>
+	    <div class="datatype-box">
+	    	<ul class="oh">
+	            <li class="dat-hove" data-type="1">亚盘</li>
+	            <li>欧赔</li>
+	            <li>大小球</li>
+	        </ul>
+	    </div>
+	</section>
+	<section class="affbuttn-box">
+		<a href="javascript:;" class="aff-buttn">确 定</a>
+	</section>
+</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1263553355'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1263553355%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+<script src="js/sea.js" id="seajsnode"></script>
+<script src="js/config.js"></script>
+		<!--<script src="js/mui.js"></script>-->
+		<script type="text/javascript">
+			seajs.use('index', function(main) {
+				main.init();
+			})
+</script>
+</html>

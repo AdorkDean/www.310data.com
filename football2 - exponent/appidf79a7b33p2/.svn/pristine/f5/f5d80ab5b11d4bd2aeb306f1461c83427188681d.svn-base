@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>统计完赛</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/inner.css">
+    
+</head>
+<body>
+<div id="living_top">		
+	<header id="header-live">
+	    <i class="iconfont-filter live-header-tit living_fan"><a href="javascript:;"><img src="img/score/zb_c5.png"></a></i>
+	  	<center class="header_sai"></center>
+	</header>
+	<section class="live-broadcast">
+		<div class="live-bro-box oh">
+			<div id="header_top">
+		    	<!--<div class="live-bro-name">
+		            <div>法国法国法u20</div>
+		        </div>
+		        <div class="live-bro-time">
+		        	<div class="bro-time-list oh">
+		            	<aside class="dl">2017-06-06</aside>
+		                <aside class="dl"><span>19</span><span>:</span><span>00</span></aside>
+		            </div>
+		            <div class="live-bro-bf oh"><span>1</span><span>:</span><span>2</span></div>
+		            <div class="bro-name-half oh"><span>（</span><span>1</span><span>:</span><span>0</span><span>）</span></div>
+		            <div class="bro-stoped" >完赛</div>
+		        </div>
+		        <div class="live-bro-name2">意大意大利意u20</div>	-->
+	        </div>
+	        <div class=" live-bro-cards">
+	        	<div class="dl red-cards">
+	            	<span><img src="img/score/zb_c1.png"></span><span class="redL">0</span>
+	            </div>
+	            <div class="dl yellow-cards">
+	            	<span><img src="img/score/zb_c2.png"></span><span class="huangL">0</span>
+	            </div>
+	            <div class="dl cc-cards">
+	            	<span><img src="img/score/zb_c3.png"></span><span class="jiaoL">0</span>
+	            </div>
+	        </div>
+	        <div class="live-bro-cards-rl">
+	        	<div class="dl red-cards">
+	            	<span><img src="img/score/zb_c1.png"></span><span class="redR">0</span>
+	            </div>
+	            <div class="dl yellow-cards">
+	            	<span><img src="img/score/zb_c2.png"></span><span class="huangR">0</span>
+	            </div>
+	            <div class="dl cc-cards">
+	            	<span><img src="img/score/zb_c3.png"></span><span class="jiaoR">0</span>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+</div>
+
+<div class="com box-main odd zhishu">
+    
+
+<!--新架构-->
+<!--亚盘-->
+<section class="oh new-yp-box ya">
+	<section class="pl-anau">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-box">
+          <tr>
+            <th class="pl_gong">公司</th>
+            <th class="pl_shi">时间</th>
+            <th class="pl_zhu">主队</th>
+            <th class="pl_pan">盘口</th>
+            <th class="pl_ke">客队</th>
+            
+          </tr>
+        </table>
+    </section>
+	<aside class="dl new-yp-left">
+    	<div class="yp-nav pl_y">
+        	<ul>
+        	
+            	<li>利记</li>
+                <li>澳彩</li>
+                <li>智博</li>
+                <li>皇冠</li>
+                <li>浩博</li>
+                <li>沙巴</li>
+ 
+                <div class="return" id="back"><a href="javascript:;"><p><img src="img/p_25.png"></p>返回列表</a></div>
+            </ul>
+        </div>
+    </aside>
+    <aside class="dl new-yp-right">
+    	
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box b1">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b2">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b3">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b4">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b5">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ya-box dn b6">
+            
+        </table>
+    </aside>
+</section>
+<!--欧盘-->
+<section class="oh new-yp-box dn op">
+	<section class="pl-anau">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-box">
+          <tr>
+            <th class="pl_gong">公司</th>
+            <th class="pl_shi">时间</th>
+            <th class="pl_zhu">主队</th>
+            <th class="pl_pan">盘口</th>
+            <th class="pl_ke">客队</th>
+          </tr>
+        </table>
+    </section>
+	<aside class="dl new-yp-left">
+    	<div class="yp-nav pl_o">
+        	<ul>
+            	<li>利记</li>
+                <li>澳彩</li>
+                <li>智博</li>
+                <li>皇冠</li>
+                <li>浩博</li>
+                <li>沙巴</li>
+                <div class="return"><a href="javascript:;"><p><img src="img/p_25.png"></p>返回列表</a></div>
+            </ul>
+        </div>
+    </aside>
+    <aside class="dl new-yp-right">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box ou1">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou2">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou3">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou4">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou5">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box ou-box dn ou6">
+              
+        </table>
+    </aside>
+</section>
+<!--大小球-->
+<section class="oh new-yp-box dn dx">
+	<section class="pl-anau">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-box">
+          <tr>
+            <th class="pl_gong">公司</th>
+            <th class="pl_shi">时间</th>
+            <th class="pl_zhu">主队</th>
+            <th class="pl_pan">盘口</th>
+            <th class="pl_ke">客队</th>
+          </tr>
+        </table>
+    </section>
+	<aside class="dl new-yp-left">
+    	<div class="yp-nav pl_d">
+        	<ul>
+            	<li>利记</li>
+                <li>澳彩</li>
+                <li>智博</li>
+                <li>皇冠</li>
+                <li>浩博</li>
+                <li>沙巴</li>
+                <div class="return"><a href="javascript:;"><p><img src="img/p_25.png"></p>返回列表</a></div>
+            </ul>
+        </div>
+    </aside>
+    <aside class="dl new-yp-right">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box da1">
+             
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da2">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da3">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da4">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da5">
+              
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="pl-nav-box da-box dn da6">
+              
+        </table>
+    </aside>
+</section>
+
+
+</div>
+<div class="zs-nav2">
+    <ul>
+        <li class="zs-on2">亚盘</li>
+        <li>欧赔</li>
+        <li>大小球</li>
+    </ul>	
+</div>
+
+</body>
+
+<script src="js/sea.js" id="seajsnode"></script>
+<script src="js/config.js"></script>
+		<!--<script src="js/mui.js"></script>-->
+		<script type="text/javascript">
+			seajs.use('odds', function(main) {
+				main.init();
+			})
+</script>
+</html>

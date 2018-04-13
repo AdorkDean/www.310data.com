@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="format-detection" content="telephone=yes" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<title>足球数据</title>
+		
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.0.min.css"/>
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js 
+"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5650559136655122",
+    enable_page_level_ads: true
+  });
+</script>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="score-logo"><img src="img/score/sco_logo_3x.png"></h1>
+		</header>
+		<!-- 固定 -->
+		<nav class="score-nav" id="fixed">
+			<div class="acor-nav-li Hirsan6">
+				<a href="javascript:;">首页</a>
+				<a href="http://football1.310data.com">比分</a>
+				<a href="http://football2.310data.com">指数</a>
+				<a href="http://football3.310data.com">交锋</a>
+				<a href="http://esports.310data.com">电竞</a>
+				<a href="http://lottery.310data.com">彩票</a>
+				<a href="http://api.newsyunwang.com/sdkweb/?appId=998f556652a9642451b2797d577a8a4d&appSecret=e80504ebb99a72a52724079765aa8745">资讯</a>
+			</div>
+			<div class="direct-seed">
+				<div class="direct-left Hirsan6">
+					<font class="tb">直播</font>
+				</div>
+				<div id="demoLeft" class="direct-right Hirsan3">
+					<div class="indemo">
+			              <div id="demo1" class="demo ticker-1">
+			                      
+			                    <!--<span>世青赛</span>
+			                    <span>墨西哥u20</span>
+			                    <span>vs</span>
+			                    <span>塞内加尔u20</span>
+			                    <span class="dark-green">66’</span>
+			                    <div class="ash-pink dl bf-listbox">
+			                    	<div>2</div><div>:</div><div>0</div>
+			                    </div>   
+								<div class="ash-pink dl bf-listbox bf_zhi">
+			                    	<div>(主:</div><div>55’</div><div>,</div><div>客:</div><div>55’</div><div>)</div>
+			                    </div>   -->
+			              </div>
+			              <div id="demo2" class="demo"></div>
+			         </div>
+				
+				</div>
+			</div>
+		</nav>
+		<!-- 固定结束 -->
+		<!-- 热门比赛盒子 -->
+		<section class="hotmatch-box">
+			<div class="hotmatch-title Hirsan3">
+				<div class="hotm-tit-left dl t14">热门比赛</div>
+				<a href="http://football1.310data.com" class="hotm-tit-right dr">全部</a>
+			</div>
+			<div class="hotmatch-listbox Hirsan3 t12 swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide circle1">
+					</div>
+					<div class="swiper-slide circle2">
+					</div>
+					<div class="swiper-slide circle3">
+					</div>
+					<div class="swiper-slide circle4">
+					</div>
+					<div class="swiper-slide circle5">
+					</div>
+					
+					
+				</div>
+				<!--<a>
+					<div class="hot-listbox-one oh">
+						<div class="match-time dl">66'</div>
+							<div class="match-msgs dl">
+								<div class="Hirsan3 F-grey match-number oh">
+										<div>世青</div>
+										<div>6月2日</div>
+										<div>半场</div>
+										<div class="dl">1-0</div>
+									</div>
+									<div class="match-list H-black">
+										<span class="deepred">2</span>
+										<span>纽维尔斯老男孩</span>
+										<span>-0/0.5</span>
+										<span class="dark-green">1.18</span>
+									</div>
+									<div class="match-list H-black">
+										<span class="deepred">0</span>
+										<span>纽维尔斯老男孩</span>
+										<span></span>
+										<span>0.77</span>
+									</div>
+								</div>
+							</div>
+				</a>
+				<a href="javascript:;">
+					<div class="hot-listbox-one oh">
+						<div class="match-time dl">66'</div>
+						<div class="match-msgs dl">
+							<div class="Hirsan3 F-grey match-number oh">
+								<div>世青赛</div>
+								<div>6月2日</div>
+								<div>半场</div>
+								<div class="dl">1-0</div>
+							</div>
+							<div class="match-list H-black">
+								<span class="deepred">0</span>
+								<span>纽维尔斯老男孩</span>
+								<span>-0/0.5</span>
+								<span class="dark-green">1.18</span>
+							</div>
+							<div class="match-list H-black">
+								<span class="deepred">2</span>
+								<span>纽维尔斯老男孩</span>
+								<span></span>
+								<span>0.77</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="javascript:;">
+					<div class="hot-listbox-one oh">
+						<div class="match-time match-time2 dl t12">
+							距开赛</br>1天2小时
+						</div>
+						<div class="match-msgs dl">
+							<div class="Hirsan3 F-grey match-number oh">
+								<div>世青赛</div>
+								<div>6月2日</div>
+								<div>半场</div>
+								<div class="dl">1-0</div>
+							</div>
+							<div class="match-list H-black">
+								<span class="">-</span>
+								<span>纽维尔斯老男孩</span>
+								<span>-0/0.5</span>
+								<span class="dark-green">1.18</span>
+							</div>
+							<div class="match-list H-black">
+								<span class="">-</span>
+								<span>纽维尔斯老男孩</span>
+								<span></span>
+								<span>0.77</span>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="javascript:;">
+					<div class="hot-listbox-one oh">
+						<div class="match-time match-time2 dl t12">
+							距开赛</br>1天2小时
+						</div>
+						<div class="match-msgs dl">
+							<div class="Hirsan3 F-grey match-number oh">
+								<div>世青赛</div>
+								<div>6月2日</div>
+								<div>半场</div>
+								<div class="dl">1-0</div>
+							</div>
+							<div class="match-list H-black">
+								<span class="deepred">2</span>
+								<span>纽维尔斯老男孩</span>
+								<span>-0/0.5</span>
+								<span class="dark-green">3.18</span>
+							</div>
+							<div class="match-list H-black">
+								<span class="deepred">0</span>
+								<span>纽维尔斯老男孩</span>
+								<span></span>
+								<span>0.77</span>
+							</div>
+						</div>
+					</div>
+				</a>-->
+			</div>
+		</section>
+		<!-- 热门比赛盒子 end -->
+		<!-- 足球指数 -->
+		<section class="Hirsan3 ex-ballbox">
+			<div class="hotmatch-title Hirsan3">
+				<div class="hotm-tit-left dl t14">足球指数</div>
+				<a href="http://football2.310data.com" class="hotm-tit-right dr">全部</a>
+			</div>
+			<div class="exponent-box Hirsan3">
+				<!--<div class="exp-box-one">-->
+					<!--<div class="exp-one-tabtop t11">
+						<div class="exp-name">澳洲甲澳洲甲</div>
+						<div class="exp-number">90+</div>
+						<div class="dl">
+							<div class="dl">悉尼悉尼尼FC</div>
+							<div class="dl">
+								<div class="dl deepred exp-bf">
+									<span>1</span><span>:</span><span>1</span>
+								</div>
+								<div class="dl">中央海岸央海岸</div>
+							</div>
+						</div>
+						<div>
+							<div class="exp-up " id="expup"></div>
+						</div>
+					</div>
+					<div class="exp-tabbox" id="exptabbox">
+						<div class="zhan">
+		                        <span>赛时 </span>
+		                        <span>主 </span>
+		                        <span>盘</span>
+		                        <span>客</span>
+		                        <span>赛时 </span>
+		                        <span>主 </span>
+		                        <span>盘</span>
+		                        <span>客</span>
+						</div>
+						<div class="dl exp-table-left show1">
+		                  <table width="100%" border="1" cellspacing="0" cellpadding="0">
+		                     
+		                      <tr>
+		                        <td>13.38</td>
+		                        <td>1.25</td>
+		                        <td>0.25</td>
+		                        <td>0.68</td>
+		                      </tr>
+		                      <tr>
+		                        <td>13.38</td>
+		                        <td>1.25</td>
+		                        <td>0.25</td>
+		                        <td>0.68</td>
+		                      </tr>
+		                      <tr>
+		                        <td>13.38</td>
+		                        <td>1.25</td>
+		                        <td>0.25</td>
+		                        <td>0.68</td>
+		                      </tr>
+		                      <tr>
+		                        <td class="F-grey">初盘</td>
+		                        <td>1.25</td>
+		                        <td>0.25</td>
+		                        <td>0.68</td>
+		                      </tr>
+		                    </table>
+		            	</div>
+		            <div class="dr  exp-table-right">
+		                   <table width="100%" border="1" cellspacing="0" cellpadding="0">
+		                 
+		                  <tr>
+		                    <td>13.38</td>
+		                    <td>2.05</td>
+		                    <td>0.68</td>
+		                    <td>0.68</td>
+		                  </tr>
+		                  <tr>
+		                    <td>13.38</td>
+		                    <td>2.05</td>
+		                    <td>0.68</td>
+		                    <td>0.68</td>
+		                  </tr>
+		                  <tr>
+		                    <td>&nbsp;</td>
+		                    <td>&nbsp;</td>
+		                    <td>&nbsp;</td>
+		                    <td>&nbsp;</td>
+		                  </tr>
+		                  <tr>
+		                    <td class="F-grey">初盘</td>
+		                    <td>1.25</td>
+		                    <td>0.25</td>
+		                    <td>0.68</td>
+		                  </tr>
+		                </table>
+		                </div>
+					</div>-->
+				<!--</div>-->
+				<!--<div class="exp-box-one">
+					<div class="exp-one-tabtop t11">
+						<div class="exp-name">澳洲甲</div>
+						<div class="exp-number">90+</div>
+						<div class="dl">
+							<div class="dl">悉尼FC</div>
+							<div class="dl">
+								<div class="dl deepred exp-bf">
+									<span>1</span><span>:</span><span>1</span>
+								</div>
+								<div class="dl">中央海岸</div>
+							</div>
+						</div>
+						<div>
+							<div class="exp-up" id="expup"></div>
+						</div>
+					</div>
+					<div class="exp-tabbox" id="exptabbox">
+						撒旦撒好的接口撒娇就看撒反对就撒娇大神解答
+					</div>
+				</div>
+				<div class="exp-box-one">
+					<div class="exp-one-tabtop t11">
+						<div class="exp-name">澳洲甲</div>
+						<div class="exp-number">90+</div>
+						<div class="dl">
+							<div class="dl">悉尼FC</div>
+							<div class="dl">
+								<div class="dl deepred exp-bf">
+									<span>1</span><span>:</span><span>1</span>
+								</div>
+								<div class="dl">中央海岸</div>
+							</div>
+						</div>
+						<div>
+							<div class="exp-up " id="expup"></div>
+						</div>
+					</div>
+					<div class="exp-tabbox">
+						撒旦撒好的接口撒娇就看撒反对就撒娇大神解答
+					</div>
+				</div>
+				<div class="exp-box-one">
+					<div class="exp-one-tabtop t11">
+						<div class="exp-name">澳洲甲</div>
+						<div class="exp-number">90+</div>
+						<div class="dl">
+							<div class="dl">悉尼FC</div>
+							<div class="dl">
+								<div class="dl deepred exp-bf">
+									<span>1</span><span>:</span><span>1</span>
+								</div>
+								<div class="dl">中央海岸</div>
+							</div>
+						</div>
+						<div>
+							<div class="exp-up " id="expup"></div>
+						</div>
+					</div>
+					<div class="exp-tabbox">
+						撒旦撒好的接口撒娇就看撒反对就撒娇大神解答
+					</div>
+				</div>
+				<div class="exp-box-one">
+					<div class="exp-one-tabtop t11">
+						<div class="exp-name">澳洲甲</div>
+						<div class="exp-number">90+</div>
+						<div class="dl">
+							<div class="dl">悉尼FC</div>
+							<div class="dl">
+								<div class="dl deepred exp-bf">
+									<span>1</span><span>:</span><span>1</span>
+								</div>
+								<div class="dl">中央海岸</div>
+							</div>
+						</div>
+						<div>
+							<div class="exp-up " id="expup"></div>
+						</div>
+					</div>
+					<div class="exp-tabbox">
+						撒旦撒好的接口撒娇就看撒反对就撒娇大神解答
+					</div>
+				</div>
+				<div class="exp-box-one">
+					<div class="exp-one-tabtop t11">
+						<div class="exp-name">澳洲甲</div>
+						<div class="exp-number">90+</div>
+						<div class="dl">
+							<div class="dl">悉尼FC</div>
+							<div class="dl">
+								<div class="dl deepred exp-bf">
+									<span>1</span><span>:</span><span>1</span>
+								</div>
+								<div class="dl">中央海岸</div>
+							</div>
+						</div>
+						<div>
+							<div class="exp-up" id="expup"></div>
+						</div>
+					</div>
+					<div class="exp-tabbox">
+						撒旦撒好的接口撒娇就看撒反对就撒娇大神解答
+					</div>
+				</div>-->
+			</div>
+		</section>
+		<!-- 足球指数end -->
+		<!-- 交锋统针 -->
+		<section class="crostar-box Hirsan3">
+			<div class="hotmatch-title Hirsan3">
+				<div class="hotm-tit-left dl t14">交锋统计</div>
+				<a href="http://football3.310data.com" class="hotm-tit-right dr">全球5大洲,数百种联赛,10年数据</a>
+			</div>
+			<div class="crostar-txt">
+				<div class="corss-lister">
+					<a href="http://football3.310data.com/data.html?participants=1017,1030&leagueId=6117&seasonId=2519932#tables"><span><img src="img/score/img_0_3x.png"></span><span>英超</span></a>
+					<a href="http://football3.310data.com/data.html?participants=158258,158299&leagueId=6112&seasonId=2274266#tables"><span><img src="img/score/img_1_3x.png"></span><span>西甲</span></a>
+					<a href="http://football3.310data.com/data.html?participants=1049,1052&leagueId=6111&seasonId=2290610#tables" class="corss-bg"><span><img src="img/score/img_2_3x.png"></span><span>意甲</span></a>
+					<a href="http://football3.310data.com/data.html?participants=105638,16732&leagueId=6115&seasonId=2208175#tables"><span><img src="img/score/img_3_3x.png"></span><span>德甲</span></a>
+				</div>
+				<div class="corss-lister cors-lis-2">
+					<a href="http://football3.310data.com/data.html?participants=14721,1761&leagueId=6114&seasonId=2210364#tables"><span><img src="img/score/img_4_3x.png"></span><span>法甲</span></a>
+					<a href="http://football3.310data.com/data.html?participants=154620,175719&leagueId=1769353&seasonId=2523948#statistics"><span><img src="img/score/img_5_3x.png"></span><span>中协杯</span></a>
+					<a href="http://football3.310data.com/data.html?participants=154620,175719&leagueId=439844&seasonId=2404626#head2Head"><span><img src="img/score/img_6_3x.png" height="22"></span><span>中超</span></a>
+					<a href="http://football3.310data.com/data.html?participants=112633,117977&leagueId=1829647&seasonId=2444111#head2Head"><span><img src="img/score/img_7_3x.png"></span><span>亚冠</span></a>
+				</div>
+			</div>
+		</section>
+		<!-- 交锋统针end -->
+		<!-- 开奖大全 -->
+		<section class="score-win-main Hirsan3">
+			<div class="scor-win-title">
+				<div class="hotm-tit-left dl t14">开奖大全</div>
+				<a href="http://lottery.310data.com/index.html#0" class="hotm-tit-right dr">最快、最全的彩票开奖服务</a>
+			</div>
+			<div class="win-main-box">
+				<a href="http://lottery.310data.com/list.html?lotId=001">
+					<div class="win-box-list">
+						<img src="img/score/log_0_3x.png">
+						<i class="win-mores dr">详情</i>
+						<div class="win-ball-box doubl">
+							<!--<div class="win-ball-ssq oh"><span class="t12 dl">双色球</span><span class="t10 dl">17077期</span></div>
+							<div class="win-ball-jchi oh">奖池奖金:<span class="win-red mar-right">5.69亿</span>开奖日:<span>每周二四日<font class="mar-left">21:15</font></span></div>
+							<div class="win-ssq-listbox">
+								<ul>
+									<li>05</li>
+									<li>08</li>
+									<li>14</li>
+									<li>23</li>
+									<li>28</li>
+									<li>30</li>
+									<li class="win-fola-blue">11</li>
+								</ul>
+							</div>-->
+						</div>
+					</div>
+				</a>
+				<a href="http://lottery.310data.com/list.html?lotId=113">
+					<div class="win-box-list">
+						<img src="img/score/log_1_3x.png">
+						<i class="win-mores dr">详情</i>
+						<div class="win-ball-box dale">
+							<!--<div class="win-ball-ssq oh"><span class="t12 dl">大乐透</span><span class="t10 dl">17077期</span></div>
+							<div class="win-ball-jchi oh">奖池奖金:<span class="win-red mar-right">5.69亿</span>开奖日:<span>每周一三六<font class="mar-left">20:30</font></span></div>
+							<div class="win-ssq-listbox">
+								<ul>
+									<li>05</li>
+									<li>08</li>
+									<li>14</li>
+									<li>23</li>
+									<li>28</li>
+									<li class="win-fola-blue">01</li>
+									<li class="win-fola-blue">07</li>
+								</ul>
+							</div>-->
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="win-main-box-two oh">
+				<a href="http://lottery.310data.com/index.html#30"><span><img src="img/score/log_2_3x.png"></span><span>全国各省<font class="t10">11选5</font></span></a>
+				<a href="http://lottery.310data.com/jc.html"><span><img src="img/score/log_3_3x.png"></span><span>最高返奖<font class="t10">73%</font></span></a>
+				<a href="http://lottery.310data.com/list.html?lotId=002"><span><img src="img/score/log_4_3x.png"></span><span>每晚<font class="t10">21:15</font>开奖</span></a>
+				<a href="http://lottery.310data.com/index.html#32"><span><img src="img/score/log_5_3x.png"></span><span>全国各省快<font class="t10">3</font></</span></a>
+			</div>
+		</section>
+		<!-- 开奖大全end -->
+		<!-- 彩票图表-->
+		<section class="lotchart-main Hirsan3">
+			<div class="hotmatch-title">
+				<div class="hotm-tit-left dl t14">彩票图表</div>
+				<a href="http://lottery.310data.com/index.html#0" class="hotm-tit-right dr"> 1000 多张专业图表，覆盖全国彩种</a>
+			</div>
+			<div class="lotchart-box">
+				<div class="lotchart-lit oh">
+					<div class="lotchart-logmge dl">
+						<a href="http://lottery.310data.com/chart.html?lotId=001&issue=2017071"><img src="img/score/log_6_3x.png"></a>
+					</div>
+					
+					<!--<div class="botchart-links dl">
+						<div class="links-li">
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20001&chartType=0&issue=2017071">开奖分布</a>
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20002&chartType=0&issue=2017071">综合走势</a>
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20003&chartType=0&issue=2017071">定位走势</a>
+						</div>
+						<div class="links-li">
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20004&chartType=0&issue=2017071">奇偶走势</a>
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20006&chartType=0&issue=2017071">质合走势</a>
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20021&chartType=1&issue=2017071">加权均值</a>
+						</div>
+						<div class="links-li">
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20010&chartType=0&issue=2017071">跨度走势</a>
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=21004&chartType=1&issue=2017071">连号分布</a>
+							<a href="http://lottery.310data.com/chartold.html?lotId=001&chartId=20009&chartType=0&issue=2017071">和值走势</a>
+						</div>
+					</div>-->
+					<div class="botchart-links2">
+						<div class="links-li2">
+					    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					          <tr>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20001&amp;chartType=0&amp;issue=2017071">开奖分布</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20002&amp;chartType=0&amp;issue=2017071">综合走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20003&amp;chartType=0&amp;issue=2017071">定位走势</a></td>
+					          </tr>
+					        </table>
+						</div>
+					    <div class="links-li2">
+					    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					          <tr>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20004&amp;chartType=0&amp;issue=2017071">奇偶走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20006&amp;chartType=0&amp;issue=2017071">质合走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20021&amp;chartType=1&amp;issue=2017071">加权均值</a></td>
+					          </tr>
+					        </table>
+						</div>
+						<div class="links-li2">
+					    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					          <tr>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20010&amp;chartType=0&amp;issue=2017071">跨度走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=21004&amp;chartType=1&amp;issue=2017071">连号分布</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=001&amp;chartId=20009&amp;chartType=0&amp;issue=2017071">和值走势</a></td>
+					          </tr>
+					        </table>
+						</div>
+					</div>
+					
+				</div>
+				<div class="lotchart-lit oh">
+					<div class="lotchart-logmge dl">
+						<a href="http://lottery.310data.com/chartold.html?lotId=113&chartId=20002&chartType=0&issue=17070"><img src="img/score/log_7_3x.png"></a>
+					</div>
+					<div class="botchart-links2">
+						<div class="links-li2">
+					    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					          <tr>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20001&amp;chartType=0&amp;issue=17070">开奖分布</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20002&amp;chartType=0&amp;issue=17070">综合走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20003&amp;chartType=0&amp;issue=17070">定位走势</a></td>			
+					          </tr>
+					        </table>
+						</div>
+					    <div class="links-li2">
+					    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					          <tr>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20004&amp;chartType=0&amp;issue=17070">奇偶走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20006&amp;chartType=0&amp;issue=17070">质合走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20021&amp;chartType=1&amp;issue=17070">加权均值</a></td>			
+					          </tr>
+					        </table>
+						</div>
+						<div class="links-li2">
+					    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					          <tr>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20010&amp;chartType=0&amp;issue=17070">跨度走势</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=21004&amp;chartType=1&amp;issue=17070">连号分布</a></td>
+					            <td><a href="http://lottery.310data.com/chartold.html?lotId=113&amp;chartId=20009&amp;chartType=0&amp;issue=17070">和值走势</a></td>		
+					          </tr>
+					        </table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 彩票图表end -->
+		</div>
+	</body>
+	
+	<script src="js/sea.js" id="seajsnode"></script>
+	<script src="js/config.js"></script>
+	<script src="js/lib/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript">
+		seajs.use('index', function(main) {
+			main.init();
+		})
+	</script>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>统计完赛</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/inner.css">
+    
+</head>
+<body>
+<div id="living_top">		
+	<header id="header-live">
+	    <i class="iconfont-filter live-header-tit living_fan"><a href="javascript:;"><img src="img/score/zb_c5.png"></a></i>
+	  	<center class="header_sai"></center>
+	</header>
+	<section class="live-broadcast">
+		<div class="live-bro-box oh">
+			<div id="header_top">
+		    	<!--<div class="live-bro-name">
+		            <div>法国法国法u20</div>
+		        </div>
+		        <div class="live-bro-time">
+		        	<div class="bro-time-list oh">
+		            	<aside class="dl">2017-06-06</aside>
+		                <aside class="dl"><span>19</span><span>:</span><span>00</span></aside>
+		            </div>
+		            <div class="live-bro-bf oh"><span>1</span><span>:</span><span>2</span></div>
+		            <div class="bro-name-half oh"><span>（</span><span>1</span><span>:</span><span>0</span><span>）</span></div>
+		            <div class="bro-stoped" >完赛</div>
+		        </div>
+		        <div class="live-bro-name2">意大意大利意u20</div>	-->
+	        </div>
+	        <div class=" live-bro-cards">
+	        	<div class="dl red-cards">
+	            	<span><img src="img/score/zb_c1.png"></span><span class="redL">0</span>
+	            </div>
+	            <div class="dl yellow-cards">
+	            	<span><img src="img/score/zb_c2.png"></span><span class="huangL">0</span>
+	            </div>
+	            <div class="dl cc-cards">
+	            	<span><img src="img/score/zb_c3.png"></span><span class="jiaoL">0</span>
+	            </div>
+	        </div>
+	        <div class="live-bro-cards-rl">
+	        	<div class="dl red-cards">
+	            	<span><img src="img/score/zb_c1.png"></span><span class="redR">0</span>
+	            </div>
+	            <div class="dl yellow-cards">
+	            	<span><img src="img/score/zb_c2.png"></span><span class="huangR">0</span>
+	            </div>
+	            <div class="dl cc-cards">
+	            	<span><img src="img/score/zb_c3.png"></span><span class="jiaoR">0</span>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+</div>
+<div id="living_fix">
+<!--阵容-->
+<section class="pro-bar-box living_zhen">
+<!--统计-->	
+</section>
+<section class="pro-bar-box dn">
+	<div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_jin1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_jin">
+      				<span></span>
+				</div>
+            </td>
+            <td>进球</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_jin1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_jin2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_huang1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_huang">
+      				<span></span>
+				</div>
+            </td>
+            <td>黄牌</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_huang1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_huang2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_hong1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_hong">
+      				<span></span>
+				</div>
+            </td>
+            <td>红牌</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_hong1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_hong2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+     <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_wei1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_wei">
+      				<span></span>
+				</div>
+            </td>
+            <td>危险进攻</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_wei1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_wei2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_ren1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_ren">
+      				<span></span>
+				</div>
+            </td>
+            <td>危险任意球</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_ren1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_ren2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_she1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_she">
+      				<span></span>
+				</div>
+            </td>
+            <td>射正球门</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_she1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_she2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_shez1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_shez">
+      				<span></span>
+				</div>
+            </td>
+            <td>射门</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_shez1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_shez2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_jiao1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_jiao">
+      				<span></span>
+				</div>
+            </td>
+            <td>角球</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_jiao1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_jiao2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_huan1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_huan">
+      				<span></span>
+				</div>
+            </td>
+            <td>换人</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_huan1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_huan2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_fan1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_fan">
+      				<span></span>
+				</div>
+            </td>
+            <td>犯规</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_fan1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_fan2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+    <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_yue1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_yue">
+      				<span></span>
+				</div>
+            </td>
+            <td>越位</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_yue1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_yue2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+     <div class="pro-bar-list">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="tc_jie1">0
+            	<!--<div class="dl">3</div>-->
+            </td>
+            <td>
+            	<div class="list-pro-gress oBig_jie">
+      				<span></span>
+				</div>
+            </td>
+            <td>界外球</td>
+            <td>
+            	<div class="blue-list-pro-gress oBig_jie1">
+      				<span></span>
+				</div>
+            </td>
+            <td class="tc_jie2">0
+            	<!--<div class="dr">0</div>-->
+            </td>
+          </tr>
+        </table>
+    </div>
+</section>
+<section class="pro-bar-box dn living_font nav-line"></section>
+<section class="pro-bar-box dn living_event event-box-line"></section>
+<section class="pro-bar-box dn">
+	<aside id="main1" class="zb-table" class="chart1"></aside>
+	<aside id="main2" class="zb-table2" class="chart2"></aside>
+</section>
+</div>
+<div class="zb-fot-nav" style="height:6.7rem;">
+	<ul>
+		<li class="zb-on2">阵容</li>
+		<li>统计</li>
+		<li>文字</li>
+		<li>事件</li>
+		<li>走势</li>
+	</ul>	
+	<div id="add_kong" style="width:100%;height:3.8rem;"></div>
+</div>
+
+</body>
+<script src="js/lib/echarts.simple.min.js"></script>
+<script src="js/sea.js" id="seajsnode"></script>
+<script src="js/config.js"></script>
+		<!--<script src="js/mui.js"></script>-->
+		<script type="text/javascript">
+			seajs.use('living', function(main) {
+				main.init();
+			})
+</script>
+</html>

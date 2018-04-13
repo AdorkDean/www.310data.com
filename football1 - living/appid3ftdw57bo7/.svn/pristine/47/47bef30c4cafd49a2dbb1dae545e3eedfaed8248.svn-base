@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>统计</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/inner.css">
+    
+</head>
+<body>
+<section class="wrong-box">
+	<section class="wrong"></section>
+  <section class="wrong-main">
+    	<div class="wr-img"><img src="img/4_p1.png"></div>
+        <div class="wrong-btn"><a href="#"><img src="img/4_p2.png"></a></div>
+    </section>
+</section>
+</body>
+<script src="js/sea.js" id="seajsnode"></script>
+		<script src="js/config.js"></script>
+		<!--<script src="js/mui.js"></script>-->
+		<script type="text/javascript">
+			seajs.use('404', function(main) {
+				main.init();
+			})
+		</script>
+</html>
